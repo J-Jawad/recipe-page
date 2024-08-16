@@ -1,0 +1,140 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+
+    --Brown800: hsl(14, 45%, 36%);
+
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: var(--Stone100);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 736px;
+    margin: 120px auto;
+    border-radius: 15px;
+    gap: 32px;
+
+}
+
+img{
+    width: 656px;
+    border-radius: 10px;
+    align-self: center;
+}
+.titlefont{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--Stone900);
+}
+
+h2{
+    color: var(--Brown800);
+}
+
+.norm{
+    color: var(--Stone600);
+}
+.purple{
+    color: var(--Rose800);
+}
+
+ul{
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+
+ol{
+    color: var(--Brown800);
+    margin-left: 20px;
+    font-weight: 700;
+    font-family: "Outfit", sans-serif;
+    line-height: 30px;
+}
+
+span{
+    color: var(--Stone600);
+    font-weight: 400;
+}
+
+.partition{
+    height: 1px;
+    background-color: var(--Stone600);
+    opacity: 30%;
+}
+
+.preptime{
+    background-color: var(--Rose50);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table{
+    line-height: 30px;
+    color: hsla(30, 10%, 34%, 80%);;
+}
+
+td{
+    border-bottom: 1px solid var(--Stone150);
+
+}
+
+.val{
+    color: var(--Rose800);
+    font-weight: 700;
+}
+
+.last{
+    border-bottom: none;
+}
+
+@media only screen and (max-width: 376px) {
+    
+    .main-container{
+        margin-top:0;
+        margin-bottom: 20px;
+        width: 100vw;
+        text-overflow: ellipsis;
+        padding-top: 0;
+    }
+
+    img{
+        width: 375px;
+        border-radius: 0;
+
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
